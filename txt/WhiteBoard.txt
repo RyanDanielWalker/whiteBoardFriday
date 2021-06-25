@@ -1,0 +1,29 @@
+given an array remove all duplicate elements
+cannot use filter
+[7, 7, "hi", 12, "hi", 7, 53]
+[7, "hi", 12, 53]
+
+function promptTwo (array) {
+  let newArray = []
+  array.forEach((element) => {
+    if (!newArray.includes(element)){
+      newArray.push(element)
+    }
+  })
+  return newArray
+}
+
+function promptTwoFilter(array) {
+  let newArray = array.filter((element, i) => {
+    return array.indexOf(element) === i
+  })
+  return newArray
+}
+
+
+////////Attempt at recursion for just a minute\\\\\\\\\\\\
+const promptTwoFilter = (array, i = 0, newArray = []//[7]){
+  if (array[i] === array[i + 1])
+  newArray.concat(array[i])
+  return promptTwoFilter(array, i +1, newArray)
+}

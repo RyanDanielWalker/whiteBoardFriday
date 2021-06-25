@@ -20,7 +20,6 @@ function promptFour(string) {
   return true
 }
 
-
 function promptFour(string) {
   //string = "hello"
   for (let i = 0; i < string.length; i++) {

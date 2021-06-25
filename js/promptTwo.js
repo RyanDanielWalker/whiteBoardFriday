@@ -18,11 +18,11 @@ function promptTwo(array) {
 function promptTwoFilter(array) {
   let newArray = array.filter((element, i) => {
     return array.indexOf(element) === i
-    //[1, 2, 3, 4, 4, 4, 5]
-    //[1 = i(0), 2 = i(1), 3 = i(2), 4 = i(3), 5 = i(6)]
   })
   return newArray
 }
+//[1, 2, 3, 4, 4, 4, 5]
+//[1 = i(0), 2 = i(1), 3 = i(2), 4 = i(3), 5 = i(6)]
 
 //The indexOf() method returns the index of the first occurrence of an element in an array. 
 //The duplicate element is the element whose index is different from its indexOf() value.

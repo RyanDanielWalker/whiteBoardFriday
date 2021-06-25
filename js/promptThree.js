@@ -54,4 +54,34 @@ function promptThree(string) {
   return newString
 }
 
+//ATTEMPT TO BEGIN SOLVING RECURSIVELY
+// const recursiveThree = (string, i = 0, newString = "", counter = 1) => {
+//   if (i < string.length) {
+//     const currentCharacter = string[i]
+//     //i = 0
+//     //currentCharacter = "a"
+//     //counter = 2
+//     //i = 1
+//     //currentCharacter = "a"
+//     //counter = 3
+//     //i = 2
+//     //currentCharacter = "a" 
+//     const nextCharacter = string[i + 1]
+//     //nextCharacter = "a"
+//     //nextCharacter = "a"
+//     //nextCharacter = "b"
+//     if (currentCharacter === nextCharacter) {
+//       return recursiveThree(string, i + 1, newString = "", counter + 1)
+//     } else {
+//       if (counter === 1) {
+//         const newString = newString.concat(currentCharacter)
+//         return recursiveThree(string, i + 1, newString, counter = 1)
+//       }
+//       const newString = newString.concat(counter + currentCharacter)
+//       return recursiveThree(string, i + 1, newString, counter = 1)
+//     }
+//   } else {
+//     return newString
+//   }
+// }
 
