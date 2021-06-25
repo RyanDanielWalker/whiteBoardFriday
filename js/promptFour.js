@@ -11,7 +11,6 @@
 //if whitespace string = string.replace(/\s+/g, '')
 //if uppercase and lowercase are not considered unique string = string.toLowerCase()
 function promptFour(string) {
-  console.log(string)
   for (let i = 0; i < string.length; i++) {
     for (let e = i + 1; e < string.length; e++) {
       if (string[i] === string[e])

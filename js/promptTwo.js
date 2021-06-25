@@ -1,5 +1,7 @@
+//Can I expect multiple data types?
+//Am I only accounting for duplicate elements or should I account for ANY duplicate? ie: [51, 5] both have 5
 function promptTwo(array) {
-  //array = [7, 9, "hi", 12, "hi" 7, 53]
+  //array = [7, 9, "hi", 12, "hi", 7, 53]
   let newArray = []
   array.forEach((element) => {
     if (!newArray.includes(element)) {
