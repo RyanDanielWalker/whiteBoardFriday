@@ -22,6 +22,8 @@ function promptThree(string) {
   return newString
 }
 
+//We want to find the number of times a character is repeating in a string. In order to do that, we will need to compare each character to the character following it. If we loop through the string beginning at the 0th index for as long as the string has characters (The last index will only need to be compared to the index in front of it), we should be able to tell if the character at the current index matches the character in the next index position. 
+
 function promptThree(string) {
   let newString = "" //empty string
   let counter = 1 //will keep track of number of repetitions
